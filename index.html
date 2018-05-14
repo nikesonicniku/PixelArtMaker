@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container _primary" style="min-height:250px">
+    <h1>Lab: Pixel Art Maker</h1>
+    <form id="sizePicker">
+    <fieldset>
+        <legend>Enter Grid Information:</legend>
+        <h2>Choose Grid Size</h2>
+            Grid Height:
+            <input type="number" id="inputHeight" name="height" min="1" value="1">
+            Grid Width:
+            <input type="number" id="inputWeight" name="width" min="1" value="1">
+            <input type="submit">
+            <input class="button" type="reset" onclick="rst()">
+
+        <h2>Pick A Color</h2>
+        <input type="color" id="colorPicker">
+        <p class="instruction">** Click on the cells that you want to fill your color in! **</p>
+        <p class="instruction">** Click the filled pixel again to remove the color! **</p>
+        <p class="instruction">** Click <b> Reset</b> button to reset the grid! **</p>
+    </fieldset>
+    </form>
+    </div>
+    <div class="footer">
+        <h2>Design Canvas</h2>
+        <table id="pixelCanvas"></table>
+
+        <script src="designs.js"></script>
+        
+        <p class="foot">By- KHUSHWANT SONI</p>
+    </div>
+</body>
+</html>
